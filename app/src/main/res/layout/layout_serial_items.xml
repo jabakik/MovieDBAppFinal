@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:background="#242A32">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Guid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Guid2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93"/>
+    <ImageView
+        android:id="@+id/movPoster"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintWidth_percent="0.229"
+        app:layout_constraintDimensionRatio="0.791"
+        app:layout_constraintStart_toStartOf="@id/Guid1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/movTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/title"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/movPoster"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/movRelDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Release_date"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/movPoster"
+        app:layout_constraintTop_toBottomOf="@+id/movTitle" />
+    <TextView
+        android:id="@+id/movRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Average_rating"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/movPoster"
+        app:layout_constraintTop_toBottomOf="@+id/movRelDate" />
+    <View
+        android:id="@+id/ratStar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/ic_star_solid"
+        app:layout_constraintTop_toTopOf="@+id/movPoster"
+        app:layout_constraintEnd_toEndOf="@+id/Guid2"
+        />
+    <TextView
+        android:id="@+id/movStarRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="3dp"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/ratStar"
+        app:layout_constraintStart_toStartOf="@+id/ratStar"
+        tools:text="9.5"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

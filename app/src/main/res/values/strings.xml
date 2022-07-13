@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Movie DB App</string>
+    <string name="title">Title:\ %1$s</string>
+    <string name="Release_date">Release Date:\n %1$s</string>
+    <string name="Average_rating">Average Rating: \n %1$d </string>
+    <string name="movie_db_app">Movie DB App</string>
+    <string name="categories">Categories</string>
+    <string name="about_movie">About Movie</string>
+    <string name="overviews">Overviews:\n %1$s </string>
+    <string name="Release_date1">Release Date:\n %1$s</string>
+    <string name="Average_rating1">Average Rating: \n %1$d </string>
+    <string name="Popularity">Popularity: \n %1$d </string>
+    <string name="rate_count">Rate Count: \n %1$d </string>
+</resources>
